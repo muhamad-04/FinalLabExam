@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New Record</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Add New Record</h1>
+    <form action="/add" method="POST">
+      <div class="form-group">
+        <label for="regNumber">Reg#</label>
+        <input type="text" class="form-control" id="regNumber" name="regNumber">
+      </div>
+      <div class="form-group">
+        <label for="collectionName">Collection Name</label>
+        <input type="text" class="form-control" id="collectionName" name="collectionName">
+      </div>
+      <div class="form-group">
+        <label for="fields">Fields</label>
+        <textarea class="form-control" id="fields" name="fields"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+  </div>
+</body>
+</html>

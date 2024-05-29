@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Record</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Edit Record</h1>
+    <form action="/edit/<%= record._id %>" method="POST">
+      <div class="form-group">
+        <label for="regNumber">Reg#</label>
+        <input type="text" class="form-control" id="regNumber" name="regNumber" value="<%= record.regNumber %>">
+      </div>
+      <div class="form-group">
+        <label for="collectionName">Collection Name</label>
+        <input type="text" class="form-control" id="collectionName" name="collectionName" value="<%= record.collectionName %>">
+      </div>
+      <div class="form-group">
+        <label for="fields">Fields</label>
+        <textarea class="form-control" id="fields" name="fields"><%= record.fields %></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+  </div>
+</body>
+</html>
